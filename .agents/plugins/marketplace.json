@@ -1,0 +1,20 @@
+{
+  "name": "repo-local",
+  "interface": {
+    "displayName": "Repo Local"
+  },
+  "plugins": [
+    {
+      "name": "dynamic-workflows",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dynamic-workflows"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

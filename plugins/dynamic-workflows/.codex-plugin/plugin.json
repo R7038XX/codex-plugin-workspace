@@ -1,0 +1,26 @@
+{
+  "name": "dynamic-workflows",
+  "version": "0.1.0",
+  "description": "Codex-native planning, fan-out, review, and status workflows.",
+  "author": {
+    "name": "Dynamic Workflows Plugin Maintainers"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dynamic Workflows",
+    "shortDescription": "Plan, fan out, verify, and synthesize large Codex tasks.",
+    "longDescription": "Dynamic Workflows provides instruction-only Codex skills for safely scoping large tasks, coordinating read-heavy parallel work, reviewing findings, and reporting evidence-backed status.",
+    "developerName": "Dynamic Workflows Plugin Maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Planning",
+      "Review",
+      "Status"
+    ],
+    "defaultPrompt": [
+      "Plan this task as a Dynamic Workflow.",
+      "Review these worker findings.",
+      "Summarize workflow status and next actions."
+    ]
+  }
+}
