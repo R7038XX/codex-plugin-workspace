@@ -1,7 +1,7 @@
 {
-  "name": "repo-local",
+  "name": "codex-plugin-workspace",
   "interface": {
-    "displayName": "Repo Local"
+    "displayName": "Codex Plugin Workspace"
   },
   "plugins": [
     {
