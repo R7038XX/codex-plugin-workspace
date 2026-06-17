@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docker cleanup safe"
+  short_description: "Run scoped or default safe cleanup with dry-run support."
+  default_prompt: "Run docker cleanup safely and report impact."

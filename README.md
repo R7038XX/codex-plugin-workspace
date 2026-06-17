@@ -1,12 +1,16 @@
 # Codex Plugin Workspace
 
-Japanese version: [plugins/README_ja.md](plugins/README_ja.md)
+Japanese version: [README_ja.md](README_ja.md)
 
 Related documents:
 
-- Workspace index: [plugins/README_ja.md](plugins/README_ja.md)
-- Dynamic Workflows: [plugins/dynamic-workflows/README.md](plugins/dynamic-workflows/README.md)
-- Dynamic Workflows 日本語版: [plugins/dynamic-workflows/README_ja.md](plugins/dynamic-workflows/README_ja.md)
+| Document | Link |
+| --- | --- |
+| Workspace index 日本語版 | [README_ja.md](README_ja.md) |
+| Dynamic Workflows | [plugins/dynamic-workflows/README.md](plugins/dynamic-workflows/README.md) |
+| Dynamic Workflows 日本語版 | [plugins/dynamic-workflows/README_ja.md](plugins/dynamic-workflows/README_ja.md) |
+| Docker-Command | [plugins/docker-command/README.md](plugins/docker-command/README.md) |
+| Docker-Command 日本語版 | [plugins/docker-command/README_ja.md](plugins/docker-command/README_ja.md) |
 
 This repository is a repo-local Codex plugin workspace. It manages one or more
 plugins under `plugins/` and exposes them through the repo marketplace at
@@ -27,7 +31,11 @@ plugins under `plugins/` and exposes them through the repo marketplace at
 .
 ├── .agents/plugins/marketplace.json
 ├── plugins/
-│   ├── README_ja.md
+│   ├── docker-command/
+│   │   ├── .codex-plugin/plugin.json
+│   │   ├── README.md
+│   │   ├── README_ja.md
+│   │   └── skills/
 │   └── dynamic-workflows/
 │       ├── .codex-plugin/plugin.json
 │       ├── README.md
@@ -38,7 +46,6 @@ plugins under `plugins/` and exposes them through the repo marketplace at
 ```
 
 - `.agents/plugins/marketplace.json`: repo-local marketplace definition.
-- `plugins/README_ja.md`: Japanese workspace-level plugin index.
 - `plugins/<plugin-name>/.codex-plugin/plugin.json`: each plugin manifest.
 - `plugins/<plugin-name>/README.md`: plugin-specific usage, behavior, and
   prompts.
@@ -49,6 +56,7 @@ plugins under `plugins/` and exposes them through the repo marketplace at
 
 | Plugin | Summary | Documentation |
 | --- | --- | --- |
+| `docker-command` | Docker preflight, Compose verification, and safe cleanup workflows. | [README](plugins/docker-command/README.md) / [日本語](plugins/docker-command/README_ja.md) |
 | `dynamic-workflows` | Codex-native planning, fan-out, review, and status workflows. | [README](plugins/dynamic-workflows/README.md) / [日本語](plugins/dynamic-workflows/README_ja.md) |
 
 ## Install
@@ -58,7 +66,7 @@ plugins under `plugins/` and exposes them through the repo marketplace at
 Add this repository as a Codex marketplace source:
 
 ```bash
-codex plugin marketplace add R7038XX/dwp \
+codex plugin marketplace add R7038XX/codex-plugin-workspace \
   --ref main \
   --sparse .agents/plugins \
   --sparse plugins
@@ -71,6 +79,7 @@ You can also install a plugin directly after adding the marketplace source:
 
 ```bash
 codex plugin add dynamic-workflows --marketplace repo-local
+codex plugin add docker-command --marketplace repo-local
 ```
 
 ### Local Marketplace Source

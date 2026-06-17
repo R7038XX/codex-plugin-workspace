@@ -5,7 +5,7 @@
 関連ドキュメント:
 
 - Workspace index: [../../README.md](../../README.md)
-- Workspace index 日本語版: [../README_ja.md](../README_ja.md)
+- Workspace index 日本語版: [../../README_ja.md](../../README_ja.md)
 - Dynamic Workflows: [README.md](README.md)
 
 Claude Dynamic Workflows の考え方を Codex Plugin と Skill で再利用する
@@ -34,7 +34,7 @@ Plugin です。Claude の JavaScript workflow runtime ではなく、Codex の
 
 ## 使い方
 
-workspace [README](../README_ja.md) の repository marketplace 手順でこの Plugin を
+workspace [README](../../README_ja.md) の repository marketplace 手順でこの Plugin を
 install します。install 後は、新しい Codex thread を開始してから bundled skill を
 使ってください。
 
