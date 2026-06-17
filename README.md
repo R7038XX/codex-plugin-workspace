@@ -78,8 +78,8 @@ plugin you need.
 You can also install a plugin directly after adding the marketplace source:
 
 ```bash
-codex plugin add dynamic-workflows --marketplace repo-local
-codex plugin add docker-command --marketplace repo-local
+codex plugin add dynamic-workflows --marketplace codex-plugin-workspace
+codex plugin add docker-command --marketplace codex-plugin-workspace
 ```
 
 ### Local Marketplace Source
@@ -94,7 +94,7 @@ codex plugin marketplace list
 To refresh an already added marketplace source:
 
 ```bash
-codex plugin marketplace upgrade repo-local
+codex plugin marketplace upgrade codex-plugin-workspace
 ```
 
 Start a new Codex thread after installing or upgrading plugins.
