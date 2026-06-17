@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docker preflight"
+  short_description: "Check Docker availability before running Docker commands."
+  default_prompt: "Run docker preflight and report status safely."

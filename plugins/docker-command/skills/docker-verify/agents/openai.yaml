@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docker verify"
+  short_description: "Run compose build, test, startup, and container smoke checks."
+  default_prompt: "Verify docker-compose flow and smoke checks."

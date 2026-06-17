@@ -5,7 +5,7 @@ Japanese version: [README_ja.md](README_ja.md)
 Related documents:
 
 - Workspace index: [../../README.md](../../README.md)
-- Workspace index 日本語版: [../README_ja.md](../README_ja.md)
+- Workspace index 日本語版: [../../README_ja.md](../../README_ja.md)
 - Dynamic Workflows 日本語版: [README_ja.md](README_ja.md)
 
 This plugin reuses the ideas behind Claude Dynamic Workflows as Codex Plugins

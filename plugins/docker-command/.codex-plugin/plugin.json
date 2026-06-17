@@ -1,0 +1,22 @@
+{
+  "name": "docker-command",
+  "version": "0.1.0",
+  "description": "Docker command helper plugin.",
+  "author": {
+    "name": "R7038XX"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docker-Command",
+    "shortDescription": "Safely prepare, verify, and clean Docker workflows.",
+    "longDescription": "Bundle of Docker preflight, compose verification, and safe cleanup skills for Docker-backed Codex work.",
+    "developerName": "R7038XX",
+    "category": "Productivity",
+    "capabilities": [
+      "Docker",
+      "Verification",
+      "Cleanup"
+    ],
+    "defaultPrompt": "Help me use Docker commands safely."
+  }
+}
